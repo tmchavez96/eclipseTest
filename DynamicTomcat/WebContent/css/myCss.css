@@ -1,0 +1,34 @@
+body{
+	background-color: #30d9d9;
+}
+
+.content{
+	text-align: center;
+	margin-top: 20%;
+	position: absolute;
+}
+
+.anim{
+	width: 100%;
+	height: 40px;
+
+	border: solid 5px;
+	overflow: hidden;
+}
+
+.anim::before{
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	content: "";
+	background-color: #d49d2f;
+	position: absolute;
+	z-index: -1;
+	transition: 0.8s ease;
+}
+
+.anim:hover::before{
+	width: 105%;
+	transition: 0.8s ease;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>mock reg</title>
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/validate.js"></script>
+</head>
+<body>
+	<div id ="header">
+		<p name ="headerfield" >Please fill out the form </p>
+	</div>
+	<div id="content">
+		<form id = "reg" action="./good.html">
+		<p id="feedback"><br></p>
+		<p>* implies manditory</p>
+		<table>
+			<tr>
+				<td class ="mfield"> *	</td>
+				<td class="inLabel"> First Name</td>
+				<td class="inputS"> <input id = "fname" class="nameIn" type="text" maxlength="25"> </td>
+			</tr>
+			<tr>
+				<td class ="mfield"> *	</td>
+				<td class="inLabel"> Middle Name</td>
+				<td class="inputS"> <input id = "mname" class="nameIn" type="text" maxlength="25"> </td>
+			</tr>
+			<tr>
+				<td class ="mfield"> *	</td>
+				<td class="inLabel"> Last Name</td>
+				<td class="inputS"> <input id = "lname" class="nameIn" type="text" maxlength="25"> </td>
+			</tr>
+			<tr>
+				<td class ="mfield"> *	</td>
+				<td class="inLabel"> Gender</td>
+				<td class="inputS"> Male <input name = "gen" class="nameIn" type="radio" value="male"> Female<input name = "gen" class="nameIn" type="radio" value="female"> </td>
+			</tr>
+			<tr>
+				<td class ="mfield"> *	</td>
+				<td class="inLabel"> Birth Date </td>
+				<td class="inputS"> <input id = "bd" class="nameIn" type="text" maxlength="10" placeholder="mm/dd/yyyy" onchange="validBD()"> </td>
+				<td class="output"> <output id = "age"> 00 </output> </td>
+			</tr>
+			<tr>
+				<td class ="mfield"> *	</td>
+				<td class="inLabel"> Category</td>
+				<td class="inputS"> <select name="category"> <option value="Regular">Regular</option><option value="New">New</option></select> </td>
+			</tr>
+			<tr>
+				<td class ="mfield"> *	</td>
+				<td class="inLabel"> Street 1</td>
+				<td class="inputS"> <input id = "street1" class="nameIn" type="text" maxlength="30"> </td>
+			</tr>
+			<tr>
+				<td class ="mfield"> 	</td>
+				<td class="inLabel"> Street 2</td>
+				<td class="inputS"> <input id = "street2" class="nameIn" type="text" maxlength="30"> </td>
+			</tr>
+			<tr>
+				<td class ="mfield"> *	</td>
+				<td class="inLabel"> City</td>
+				<td class="inputS"> <input id = "city" class="nameIn" type="text" maxlength="25"> </td>
+			</tr>
+			<tr>
+				<td class ="mfield"> *	</td>
+				<td class="inLabel"> State</td>
+				<td class="inputS"> <input id = "state" class="nameIn" type="text" maxlength="25"> </td>
+			</tr>
+			<tr>
+				<td class ="mfield"> *	</td>
+				<td class="inLabel"> Email</td>
+				<td class="inputS"> <input id = "email" class="nameIn" type="text" maxlength="25"> </td>
+			</tr>
+			<tr>
+				<td class ="mfield"> *	</td>
+				<td class="inLabel"> Phone Number</td>
+				<td class="inputS"> <input id = "phoneNumber" class="nameIn" type="text" maxlength="10" placeholder="digits only"> </td>
+			</tr>
+			<tr>
+				<td class ="lrow"></td><td class ="lrow"> <input type="submit"  value="submit" onclick=" return mainValidate()"></td> <td class ="lrow"> <input type="button" value="reset"> </td>
+			</tr>
+		</table>
+		</form>
+	</div>
+	<div id = "footer">
+		<p name ="headerfield" >Copyright me </p>
+	</div>
+
+
+</body>
+</html>
