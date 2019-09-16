@@ -30,5 +30,5 @@ body{
 
 .anim:hover::before{
 	width: 105%;
-	transition: 0.8s ease;
+	transition: 0.7s ease;
 }
